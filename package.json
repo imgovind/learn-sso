@@ -1,0 +1,31 @@
+{
+  "name": "learn-sso",
+  "version": "0.0.1",
+  "description": "Learn SSO",
+  "main": "index.js",
+  "repository": "git@github.com:imgovind/learn-sso.git",
+  "author": "Govindarajan Panneerselvam",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "esm": "^3.0.84",
+    "express": "^4.16.4",
+    "graphql-tools": "^4.0.2",
+    "graphql-yoga": "^1.16.7",
+    "jsonwebtoken": "^8.3.0",
+    "lodash.get": "^4.4.2",
+    "merge-graphql-schemas": "^1.5.7",
+    "moment": "^2.22.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "typeorm": "^0.2.8",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
