@@ -1,0 +1,55 @@
+#############################
+# SSO
+#############################
+scalar Date
+scalar Time
+scalar DateTime
+scalar JSON
+
+#############################
+# SSO
+#############################
+type JWTToken {
+  iss: String
+  exp: Int
+  aud: String
+  username: String
+  iat: Int
+}
+
+type UserPermission {
+  id: ID!
+  name: String!
+}
+
+type UserRole {
+  id: ID!
+  name: String!
+  permissions: [UserPermission]
+}
+
+type UserType {
+  id: ID!
+  name: String!
+}
+
+type User {
+  firstName: String!
+  middleName: String
+  lastName: String!
+  dob: Date
+  type: UserType!
+  role: UserRole!
+  createdAt: Date
+  updatedAt: Date
+}
+
+type Query {
+  ssoLogin(username: String, password: String): String
+  ssoLogout: String
+  ssoIsAuthenticated: JWTToken
+}
+
+type Mutation {
+  ssoSignup(username: String, password: String): String
+}
